@@ -9,7 +9,7 @@ Images are ugly until they're loaded. Materialize it with material image! It wil
 ## Installation
 
 ```sh
-npm install material-ui-image
+npm install @jy95/material-ui-image
 ```
 
 **Note:** This is the version for Material-UI 1.0.0-rc.0 or later. If you are using Material-UI 1.0.0-beta, you should update to the latest version. If you are still using Material-UI 0.x, you can use our [legacy version][legacy].
@@ -19,7 +19,7 @@ npm install material-ui-image
 Use this component just like a regular img tag.
 
 ```jsx
-import Image from 'material-ui-image'
+import Image from '@jy95/material-ui-image'
 
 <Image
   src="http://loremflickr.com/300/200"
@@ -53,4 +53,4 @@ All other props are passed through to the underlying `img` element after the ima
 
 The files included in this repository are licensed under the MIT license.
 
-[legacy]: https://github.com/TeamWertarbyte/material-ui-image/tree/legacy
+[legacy]: https://github.com/jy95/material-ui-image/tree/legacy

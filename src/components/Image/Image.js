@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import CircularProgress from '@material-ui/core/CircularProgress'
-import common from '@material-ui/core/colors/common'
-import grey from '@material-ui/core/colors/grey'
-import BrokenImage from '@material-ui/icons/BrokenImage'
+import CircularProgress from '@mui/material/CircularProgress';
+import common from '@mui/material/colors/common'
+import grey from '@mui/material/colors/grey'
+import BrokenImage from '@mui/icons-material/BrokenImage'
 
 /**
  * Images are ugly until they're loaded. Materialize it with material image! It will fade in like the material image loading pattern suggests.
