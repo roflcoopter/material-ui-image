@@ -156,8 +156,16 @@ Image.defaultProps = {
   disableError: false,
   disableSpinner: false,
   disableTransition: false,
-  errorIcon: <BrokenImage style={{ width: 48, height: 48, color: '#e0e0e0' }} />,
-  loading: <CircularProgress size={48} />
+  errorIcon: createElement(BrokenImage, {
+    style: {
+      width: 48, 
+      height: 48, 
+      color: '#e0e0e0'
+    }
+  }),
+  loading: createElement(CircularProgress, {
+    size: 48
+  })
 }
 
 Image.propTypes = {
