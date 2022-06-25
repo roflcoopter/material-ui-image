@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
+import { Component, createRef } from 'react'
 import PropTypes from 'prop-types'
 import CircularProgress from '@mui/material/CircularProgress';
 import common from '@mui/material/colors/common'
-import grey from '@mui/material/colors/grey'
 import BrokenImage from '@mui/icons-material/BrokenImage'
 
 /**
@@ -17,7 +16,7 @@ export default class Image extends Component {
       imageLoaded: false,
       src: this.props.src
     }
-    this.image = React.createRef()
+    this.image = createRef()
   }
 
   static getDerivedStateFromProps (props, state) {
@@ -163,7 +162,7 @@ Image.defaultProps = {
   disableError: false,
   disableSpinner: false,
   disableTransition: false,
-  errorIcon: <BrokenImage style={{ width: 48, height: 48, color: grey[300] }} />,
+  errorIcon: <BrokenImage style={{ width: 48, height: 48, color: '#e0e0e0' }} />,
   loading: <CircularProgress size={48} />
 }
 
