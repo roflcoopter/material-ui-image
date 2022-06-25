@@ -1,6 +1,6 @@
 {
   "name": "@jy95/material-ui-image",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Material style image with loading animation",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -36,14 +36,11 @@
     "@babel/plugin-proposal-class-properties": "^7.17.12",
     "@babel/preset-env": "^7.18.0",
     "@babel/preset-react": "^7.17.12",
-    "@webpack-blocks/babel": "^2.1.0",
-    "@webpack-blocks/webpack": "^2.1.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
     "gh-pages": "^4.0.0",
-    "react-styleguidist": "^11.2.0",
     "standard": "^17.0.0",
-    "webpack": "^4.41.6"
+    "webpack": "^5.73.0"
   },
   "peerDependencies": {
     "@mui/icons-material": "^5.0.0",
