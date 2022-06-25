@@ -1,4 +1,4 @@
-import { Component, createRef } from 'react'
+import { Component, createRef, createElement } from 'react'
 import PropTypes from 'prop-types'
 import CircularProgress from '@mui/material/CircularProgress';
 import common from '@mui/material/colors/common'
@@ -134,24 +134,18 @@ export default class Image extends Component {
       ...image
     } = this.props
 
-    return (
-      <div
-        style={styles.root}
-        onClick={onClick}
-      >
-        {image.src && <img
-          {...image}
-          ref={this.image}
-          style={styles.image}
-          onLoad={this.handleLoadImage}
-          onError={this.handleImageError}
-        />}
-        <div style={styles.iconContainer}>
-          {!disableSpinner && !this.state.imageLoaded && !this.state.imageError && loading}
-          {!disableError && this.state.imageError && errorIcon}
-        </div>
-      </div>
-    )
+    return /*#__PURE__*/ createElement("div", {
+      style: styles.root,
+      onClick: onClick
+    }, image.src && /*#__PURE__*/createElement("img", _extends({}, image, {
+      ref: this.image,
+      style: styles.image,
+      onLoad: this.handleLoadImage,
+      onError: this.handleImageError
+    })), /*#__PURE__*/createElement("div", {
+      style: styles.iconContainer
+    }, !disableSpinner && !this.state.imageLoaded && !this.state.imageError && loading, !disableError && this.state.imageError && errorIcon));
+
   }
 }
 
