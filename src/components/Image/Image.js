@@ -4,6 +4,8 @@ import CircularProgress from '@mui/material/CircularProgress';
 import common from '@mui/material/colors/common'
 import BrokenImage from '@mui/icons-material/BrokenImage'
 
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 /**
  * Images are ugly until they're loaded. Materialize it with material image! It will fade in like the material image loading pattern suggests.
  * @see [Image loading patterns](https://material.io/guidelines/patterns/loading-images.html)
