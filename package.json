@@ -1,6 +1,6 @@
 {
   "name": "@jy95/material-ui-image",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "description": "Material style image with loading animation",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
