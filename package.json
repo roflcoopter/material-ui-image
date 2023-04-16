@@ -1,5 +1,5 @@
 {
-  "name": "@jy95/material-ui-image",
+  "name": "@roflcoopter/material-ui-image",
   "version": "4.0.8",
   "description": "Material style image with loading animation",
   "main": "lib/index.js",
